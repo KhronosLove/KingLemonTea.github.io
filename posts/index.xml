@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - GRAND Kyle&#39;s Blog</title>
+        <link>http://example.org/posts/</link>
+        <description>All Posts | GRAND Kyle&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kingkyleyuan@gmail.com (Kyle Yuan)</managingEditor>
+            <webMaster>kingkyleyuan@gmail.com (Kyle Yuan)</webMaster><lastBuildDate>Thu, 07 Oct 2021 19:18:33 &#43;0800</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Firstfdsfsdfsdfsd</title>
+    <link>http://example.org/posts/first/</link>
+    <pubDate>Thu, 07 Oct 2021 19:18:33 &#43;0800</pubDate>
+    <author>Kyle Yuan</author>
+    <guid>http://example.org/posts/first/</guid>
+    <description><![CDATA[打算 奥恩奥无撒]]></description>
+</item>
+</channel>
+</rss>
