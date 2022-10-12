@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>P1_Module 1: The Requirements for Autonomy - GRAND Kyle&#39;s Blog</title><meta name="Description" content="👑 GRAND Kyle&#39;s Blog"><meta property="og:title" content="P1_Module 1: The Requirements for Autonomy" />
+<meta property="og:description" content="P1_Module 1: The Requirements for Autonomy L1 - Taxonomy of Driving 1. Terms and Definitions 1) Driving Task perceiving the environment 感知 planning how to reach from point A to point B 规划 controlling the vehicle 控制 2) Operational Design Domain (ODD) 运行设计域：为特定驾驶自动化系统或其功能专门设计的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://KingLemonTea.github.io/posts/p1_m1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-12T18:50:26+08:00" />
+<meta property="article:modified_time" content="2022-10-12T18:50:26+08:00" /><meta property="og:site_name" content="👑 GRAND Kyle&#39;s Blog" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="P1_Module 1: The Requirements for Autonomy"/>
+<meta name="twitter:description" content="P1_Module 1: The Requirements for Autonomy L1 - Taxonomy of Driving 1. Terms and Definitions 1) Driving Task perceiving the environment 感知 planning how to reach from point A to point B 规划 controlling the vehicle 控制 2) Operational Design Domain (ODD) 运行设计域：为特定驾驶自动化系统或其功能专门设计的"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://KingLemonTea.github.io/posts/p1_m1/" /><link rel="prev" href="https://KingLemonTea.github.io/posts/first/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "P1_Module 1: The Requirements for Autonomy",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/KingLemonTea.github.io\/posts\/p1_m1\/"
+        },"genre": "posts","keywords": "Example","wordcount":  1843 ,
+        "url": "https:\/\/KingLemonTea.github.io\/posts\/p1_m1\/","datePublished": "2022-10-12T18:50:26+08:00","dateModified": "2022-10-12T18:50:26+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Kyle Yuan"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="GRAND Kyle&#39;s Blog">👑 GRAND Kyle&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="GRAND Kyle&#39;s Blog">👑 GRAND Kyle&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">P1_Module 1: The Requirements for Autonomy</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Kyle Yuan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/other/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Other</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022/10/12">2022/10/12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1843 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-terms-and-definitions">1. Terms and Definitions</a>
+      <ul>
+        <li><a href="#1-driving-task">1) Driving Task</a></li>
+        <li><a href="#2-operational-design-domain-odd">2) Operational Design Domain (ODD)</a></li>
+        <li><a href="#3-supplements">3) Supplements</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-how-to-classify-driving-system-automation">2. How to classify driving system automation？</a>
+      <ul>
+        <li><a href="#1-driver-attention-requirements">1) Driver attention requirements</a></li>
+        <li><a href="#2-driver-action-requirements">2) Driver action requirements</a></li>
+        <li><a href="#3-what-makes-up-a-driving-task">3) What makes up a driving task?</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-autonomous-capabilities">3. Autonomous Capabilities</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#1-definition-of-perception">1. Definition of Perception</a></li>
+    <li><a href="#2-goals-for-perception">2. Goals for Perception</a></li>
+    <li><a href="#3-challenges-to-perception">3. Challenges to Perception</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#1-types-of-decisions">1. Types of Decisions</a></li>
+    <li><a href="#2-types-of-planning">2. Types of Planning</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="p1_module-1-the-requirements-for-autonomy">P1_Module 1: The Requirements for Autonomy</h1>
+<h1 id="l1---taxonomy-of-driving">L1 - Taxonomy of Driving</h1>
+<h2 id="1-terms-and-definitions">1. Terms and Definitions</h2>
+<h3 id="1-driving-task">1) Driving Task</h3>
+<ul>
+<li>perceiving the environment 感知</li>
+<li>planning how to reach from point A to point B 规划</li>
+<li>controlling the vehicle 控制</li>
+</ul>
+<h3 id="2-operational-design-domain-odd">2) Operational Design Domain (ODD)</h3>
+<p>运行设计域：为特定驾驶自动化系统或其功能专门设计的运行条件，包括但不限于环境、地理和时间限制，和/或某些交通或道路特征的存在或缺失。</p>
+<h3 id="3-supplements">3) Supplements</h3>
+<ul>
+<li>
+<p><strong>ODC (Operational Design Condition)</strong></p>
+<p>设计运行时确定的驾驶自动化功能可以正常工作的条件，包括ODD、驾驶员状态以及其他必要条件。</p>
+</li>
+<li>
+<p><strong>DDT (Dynamic Driving Task)</strong></p>
+<p>在道路交通中运行车辆所需的所有实时运行和策略功能，不包括行程安排和目的地和航路点选择等战略功能。</p>
+</li>
+<li>
+<p><strong>DDT Fallback (Dynamic Driving Task Fallback)</strong></p>
+<p>在相同情况下，用户对实施DDT或达到最低风险条件的响应：</p>
+<p>1）在发生DDT性能相关系统故障后，或</p>
+<p>2）在ODD退出时，或ADS对达到最低风险条件的响应。</p>
+</li>
+<li>
+<p><strong>OEDR (Object and Event Detection and Response)</strong></p>
+<p>DDT的子任务，包括监控驾驶环境（检测，识别和分类对象和事件，并准备按需要做出响应），并对这些对象和事件执行适当的响应（即根据需要完成DDT和/或DDT接管）。</p>
+</li>
+<li>
+<p><strong>LSAD (Low Speed Automated Driving)</strong></p>
+<p>最大速度为8.89米/秒（32公里/小时）的自动驾驶系统，将被用于最后一英里的运输、商业区的运输、商业或机场、港口、大学校园区以及其他低速环境的应用。</p>
+</li>
+<li>
+<p><strong>ACC: Adaptive Cruise Control</strong></p>
+<p>A cruise control system for vehicles which controls longitudinal speed. ACC can maintain a desired reference speed or adjust its speed accordingly to maintain safe driving distances to other vehicles.</p>
+</li>
+<li>
+<p><strong>Ego</strong></p>
+<p>A term to express the notion of self, which is used to refer to the vehicle being controlled autonomously, as opposed to other vehicles or objects in the scene.  It is most often used in the form ego-vehicle, meaning the self-vehicle.</p>
+</li>
+<li>
+<p><strong>FMEA: Failure Mode and Effects Analysis</strong></p>
+<p>A bottom up approach of failure analysis which examines individual causes and determines their effects on the higher level system.</p>
+</li>
+<li>
+<p><strong>GNSS: Global Navigation Satellite System</strong></p>
+<p>A generic term for all satellite systems which provide position estimation. The Global Positioning System (GPS) made by the United States is a type of GNSS. Another example is the Russian made GLONASS (Globalnaya Navigazionnaya Sputnikovaya Sistema).</p>
+</li>
+<li>
+<p><strong>HAZOP: Hazard and Operability Study</strong></p>
+<p>A variation of FMEA (Failure Mode and Effects Analysis) which uses guide words to brainstorm over sets of possible failures that can arise.</p>
+</li>
+<li>
+<p><strong>IMU: Inertial Measurement Unit</strong></p>
+<p>A sensor device consisting of an accelerometer and a gyroscope. The IMU is used to measure vehicle acceleration and angular velocity, and its data can be fused with other sensors for state estimation.</p>
+</li>
+<li>
+<p><strong>LIDAR: Light Detection and Ranging</strong></p>
+<p>A type of sensor which detects range by transmitting light and measuring return time and shifts of the reflected signal.</p>
+</li>
+<li>
+<p><strong>LTI: Linear Time Invariant</strong></p>
+<p>A linear system whose dynamics do not change with time. For example, a car using the unicycle model is a LTI system. If the model includes the tires degrading over time (and changing the vehicle dynamics), then the system would no longer be LTI.</p>
+</li>
+<li>
+<p><strong>LQR: Linear Quadratic Regulation</strong></p>
+<p>A method of control utilizing full state feedback. The method seeks to optimize a quadratic cost function dependent on the state and control input.</p>
+</li>
+<li>
+<p><strong>MPC: Model Predictive Control</strong></p>
+<p>A method of control whose control input optimizes a user defined cost function over a finite time horizon. A common form of MPC is finite horizon LQR (linear quadratic regulation).</p>
+</li>
+<li>
+<p><strong>NHTSA: National Highway Traffic Safety Administration</strong></p>
+<p>An agency of the Executive Branch of the U.S. government who has developed a 12-part framework to structure safety assessment for autonomous driving.  The framework can be found here. <a href="https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents/13069a-ads2.0_090617_v9a_tag.pdf" target="_blank" rel="noopener noreffer ">https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents/13069a-ads2.0_090617_v9a_tag.pdf</a></p>
+</li>
+<li>
+<p><strong>ODD: Operational Design Domain</strong></p>
+<p>The set of conditions under which a given system is designed to function. For example, a self driving car can have a control system designed for driving in urban environments, and another for driving on the highway.</p>
+</li>
+<li>
+<p><strong>OEDR: Object and Event Detection and Response</strong></p>
+<p>The ability to detect objects and events that immediately affect the driving task, and to react to them appropriately.</p>
+</li>
+<li>
+<p><strong>PID: Proportional Integral Derivative Control</strong></p>
+<p>A common method of control defined by 3 gains.</p>
+<ol>
+<li>
+<p>A proportional gain which scales the control output based on the amount of the error</p>
+</li>
+<li>
+<p>An integral gain which scales the control output based on the amount of accumulated error</p>
+</li>
+<li>
+<p>A derivative gain which scales the control output based on the error rate of change</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>RADAR: Radio Detection And Ranging</strong></p>
+<p>A type of sensor which detects range and movement by transmitting radio waves and measuring return time and shifts of the reflected signal.</p>
+</li>
+<li>
+<p><strong>SONAR: Sound Navigation And Ranging</strong></p>
+<p>A type of sensor which detects range and movement by transmitting sound waves and measuring return time and shifts of the reflected signal.</p>
+</li>
+</ul>
+<h2 id="2-how-to-classify-driving-system-automation">2. How to classify driving system automation？</h2>
+<h3 id="1-driver-attention-requirements">1) Driver attention requirements</h3>
+<p>How much driver&rsquo;s attention does it take? For example, can drivers watch movies while driving to work? Or do you need to keep an eye on the steering wheel all the time?</p>
+<h3 id="2-driver-action-requirements">2) Driver action requirements</h3>
+<p>How many operations are needed? Will the car control the speed or the driver himself? Do you need to change the lane, or can the car stay in the current lane without any intervention?</p>
+<h3 id="3-what-makes-up-a-driving-task">3) What makes up a driving task?</h3>
+<ul>
+<li>lateral control - steering</li>
+<li>longitudinal control - braking, accelerating</li>
+<li>object and event detection and response (OEDR): detection, reaction</li>
+<li>planning: long term (route), short term</li>
+<li>miscellaneous</li>
+</ul>
+<h2 id="3-autonomous-capabilities">3. Autonomous Capabilities</h2>
+<ul>
+<li>
+<p>Conditions:</p>
+<ul>
+<li>Automated lateral control?</li>
+<li>Automated longitudinal control?</li>
+<li>OEDR
+<ul>
+<li>Automatic emergency response</li>
+<li>Driver supervision</li>
+</ul>
+</li>
+<li>Complete or Restricted ODD</li>
+</ul>
+</li>
+<li>
+<p>Taxonomy of Driving: ODD and Safety record are more important (limitations)</p>
+<ul>
+<li>
+<p><strong>Level 0: No Automation</strong></p>
+</li>
+<li>
+<p><strong>Level 1: Driving Assistance - Lateral Control or Longitudinal Control</strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled.png"
+        data-srcset="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled.png, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled.png 1.5x, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled.png 2x"
+        data-sizes="auto"
+        alt="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled.png"
+        title="Untitled" /></p>
+</li>
+<li>
+<p><strong>Level 2: Partial Driving Automation - Lateral Control and Longitudinal Control</strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%201.png"
+        data-srcset="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%201.png, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%201.png 1.5x, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%201.png 2x"
+        data-sizes="auto"
+        alt="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%201.png"
+        title="Untitled" /></p>
+</li>
+<li>
+<p><strong>Level 3: Conditional Driving Automation - L2 + OEDR</strong></p>
+<p>It has the ability to detect and respond to the outside world, such as responding to traffic lights. However, emergency situations cannot be dealt with (because he does not consider them in advance), and the driver is required to deal with the failure. Under such conditions, the driver can only not supervise the vehicle in some relatively open and safe places.</p>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%202.png"
+        data-srcset="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%202.png, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%202.png 1.5x, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%202.png 2x"
+        data-sizes="auto"
+        alt="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%202.png"
+        title="Untitled" /></p>
+<ul>
+<li>
+<p><strong>Level 4: High Driving Automation - L3 + Fallback</strong></p>
+<p>It has the ability to deal with emergencies because each decision is made to choose the one with the lowest risk factor, that is, to anticipate possible emergencies in advance. Under such conditions, the driver can completely not supervise the vehicle on the basis of certain driving environments.</p>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%203.png"
+        data-srcset="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%203.png, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%203.png 1.5x, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%203.png 2x"
+        data-sizes="auto"
+        alt="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%203.png"
+        title="Untitled" /></p>
+<ul>
+<li><strong>Level 5: Full Driving Automation - L4 + Unlimited ODD</strong></li>
+</ul>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%204.png"
+        data-srcset="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%204.png, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%204.png 1.5x, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%204.png 2x"
+        data-sizes="auto"
+        alt="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%204.png"
+        title="Untitled" /></p>
+<h1 id="l2---requirements-for-perception">L2 - Requirements for Perception</h1>
+<h2 id="1-definition-of-perception">1. Definition of Perception</h2>
+<p>Perception deals with object identification &amp; position and motion estimation.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%205.png"
+        data-srcset="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%205.png, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%205.png 1.5x, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%205.png 2x"
+        data-sizes="auto"
+        alt="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%205.png"
+        title="Untitled" /></p>
+<h2 id="2-goals-for-perception">2. Goals for Perception</h2>
+<ul>
+<li>
+<p>Static objects</p>
+<ul>
+<li>Road and lane markings (on-road)</li>
+<li>Construction signs, obstructions, and more (on-road)</li>
+<li>Curbs (off-road)</li>
+<li>Traffic lights (off-road)</li>
+<li>Road signs (off-road)</li>
+</ul>
+</li>
+<li>
+<p>Dynamic objects (on-road)</p>
+<p>Radar are primarily used for dynamic object detection.</p>
+<ul>
+<li>Vehicle
+<ul>
+<li>4 wheelers</li>
+<li>2 wheelers</li>
+</ul>
+</li>
+<li>Pedestrians</li>
+</ul>
+</li>
+<li>
+<p>Ego localization</p>
+<p>A GNSS sensor provides position and velocity measurements, and can be used to estimate vehicle position and orientation for localization.</p>
+<p>An IMU provide acceleration and rotation rate measurements from accelerometers and gyroscopes, and can be used to estimate vehicle orientation and aid in localization in general.</p>
+<ul>
+<li>Position</li>
+<li>Velocity, acceleration</li>
+<li>Orientation, angular motion</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-challenges-to-perception">3. Challenges to Perception</h2>
+<ul>
+<li>Robust detection and segmentation（对图像的检测和分割应该具备更好的鲁棒性）</li>
+<li>Sensor uncertainty（传感器的不确定性；例如传感器一般都会有噪声和偏差，同时工作时并非时刻都正常）</li>
+<li>Occlusion, reflection（遮蔽和反射；特别是对于相机而言，反射或者说倒影是一个应该处理的问题）</li>
+<li>Illumination, lens flare（照明亮度、光斑）</li>
+<li>Weather, precipitation（天气和降水）</li>
+</ul>
+<h1 id="l3---driving-decisions-and-actions">L3 - Driving Decisions and Actions</h1>
+<h2 id="1-types-of-decisions">1. Types of Decisions</h2>
+<ol>
+<li>
+<p>Long term - Beijing to Shanghai</p>
+</li>
+<li>
+<p>Short term - change the lane to the lane / pass the intersection and join the left road</p>
+</li>
+<li>
+<p>Immediate - accelerate or brake</p>
+</li>
+</ol>
+<h2 id="2-types-of-planning">2. Types of Planning</h2>
+<ol>
+<li>Reactive Planning</li>
+</ol>
+<ul>
+<li>Rule based planning
+<ul>
+<li>Involved decision trees</li>
+</ul>
+</li>
+<li>In reactive rule based planning, we have rules that take into account the current state of ego and other objects and give decisions.</li>
+<li>Examples:
+<ul>
+<li>If there is a pedestrian on the road, stop.</li>
+<li>If speed limit changes, adjust speed to match it.</li>
+</ul>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%206.png"
+        data-srcset="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%206.png, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%206.png 1.5x, P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%206.png 2x"
+        data-sizes="auto"
+        alt="P1_Module%201%20The%20Requirements%20for%20Autonomy%20e1375138384641f9bb9932a553ce1252/Untitled%206.png"
+        title="Untitled" /></p>
+<ol start="2">
+<li>Predictive Planning</li>
+</ol>
+<ul>
+<li>Make predictions about other vehicles and how they are moving. Then use these predictions to inform our decisions.</li>
+<li>Example:
+<ul>
+<li>That car has been stopped for the last 10 seconds. It is going to be stopped for the next few seconds.</li>
+<li>Pedestrian is jaywalking. She will enter Our lane by the time we reach her.</li>
+</ul>
+</li>
+</ul>
+<h1 id="4-reference--supplementary-reading">4. Reference &amp; Supplementary Reading</h1>
+<ol>
+<li>
+<p>Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles (J3016_202104):</p>
+<p><a href="https://www.sae.org/standards/content/j3016_202104/" target="_blank" rel="noopener noreffer ">https://www.sae.org/standards/content/j3016_202104/</a></p>
+</li>
+<li>
+<p>KITTI Vision Benchmark Suite</p>
+<p><a href="https://www.cvlibs.net/datasets/kitti/" target="_blank" rel="noopener noreffer ">https://www.cvlibs.net/datasets/kitti/</a></p>
+</li>
+<li>
+<p>Motion planning and other high-level behavior - A Survey of Motion Planning and Control Techniques for Self-Driving Urban Vehicles</p>
+<p><a href="https://ieeexplore.ieee.org/abstract/document/7490340" target="_blank" rel="noopener noreffer ">https://ieeexplore.ieee.org/abstract/document/7490340</a></p>
+</li>
+<li>
+<p>One of the very early mixed planning systems - Autonomous driving in urban environments: Boss and the Urban Challenge</p>
+<p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.20255" target="_blank" rel="noopener noreffer ">https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.20255</a></p>
+</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022/10/12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://KingLemonTea.github.io/posts/p1_m1/" data-title="P1_Module 1: The Requirements for Autonomy" data-hashtags="Example"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://KingLemonTea.github.io/posts/p1_m1/" data-hashtag="Example"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://KingLemonTea.github.io/posts/p1_m1/" data-title="P1_Module 1: The Requirements for Autonomy"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://KingLemonTea.github.io/posts/p1_m1/" data-title="P1_Module 1: The Requirements for Autonomy"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://KingLemonTea.github.io/posts/p1_m1/" data-title="P1_Module 1: The Requirements for Autonomy"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/example/">Example</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/first/" class="prev" rel="prev" title="Firstfdsfsdfsdfsd"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Firstfdsfsdfsdfsd</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container">❤️
+                <div class="footer-line">Love You.</div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kyle Yuan</a></span>&nbsp;|&nbsp;<span class="license">APACHE 2.0</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-EX0W1C1CKC');
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-EX0W1C1CKC" async></script></body>
+</html>
