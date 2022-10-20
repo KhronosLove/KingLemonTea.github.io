@@ -1,26 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>GRAND Kyle&#39;s Blog</title>
-    <link>https://KingLemonTea.github.io/</link>
-    <description>👑 GRAND Kyle&#39;s Blog</description>
+    <title>Self-Driving Cars - Category - GRAND Kyle&#39;s Blog</title>
+    <link>https://KingLemonTea.github.io/categories/self-driving-cars/</link>
+    <description>Self-Driving Cars - Category - GRAND Kyle&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kingkyleyuan@gmail.com (Kyle Yuan)</managingEditor>
-      <webMaster>kingkyleyuan@gmail.com (Kyle Yuan)</webMaster><lastBuildDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</lastBuildDate>
-      <atom:link href="https://KingLemonTea.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
+      <webMaster>kingkyleyuan@gmail.com (Kyle Yuan)</webMaster><lastBuildDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</lastBuildDate><atom:link href="https://KingLemonTea.github.io/categories/self-driving-cars/" rel="self" type="application/rss+xml" /><item>
   <title>P1_Module 1: The Requirements for Autonomy</title>
   <link>https://KingLemonTea.github.io/posts/p1_m1/</link>
   <pubDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</pubDate>
   <author>Kyle Yuan</author>
   <guid>https://KingLemonTea.github.io/posts/p1_m1/</guid>
   <description><![CDATA[P1_Module 1: The Requirements for Autonomy L1 - Taxonomy of Driving 1. Terms and Definitions 1) Driving Task perceiving the environment 感知 planning how to reach from point A to point B 规划 controlling the vehicle 控制 2) Operational Design Domain (ODD) 运行设计域：为特定驾驶自动化系统或其功能专门设计的]]></description>
-</item>
-<item>
-  <title>Firstfdsfsdfsdfsd</title>
-  <link>https://KingLemonTea.github.io/posts/first/</link>
-  <pubDate>Thu, 07 Oct 2021 19:18:33 &#43;0800</pubDate>
-  <author>Kyle Yuan</author>
-  <guid>https://KingLemonTea.github.io/posts/first/</guid>
-  <description><![CDATA[打算 奥恩奥无撒]]></description>
 </item>
 </channel>
 </rss>
