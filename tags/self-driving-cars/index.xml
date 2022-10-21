@@ -7,18 +7,9 @@
   <title>P1_Module 1: The Requirements for Autonomy</title>
   <link>https://KingLemonTea.github.io/posts/p1_m1/</link>
   <pubDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</pubDate>
-  <author>Author</author>
+  <author>Kyle Yuan</author>
   <guid>https://KingLemonTea.github.io/posts/p1_m1/</guid>
-  <description><![CDATA[P1_Module 1: The Requirements for Autonomy L1 - Taxonomy of Driving 1. Terms and Definitions 1) Driving Task perceiving the environment 感知 planning how to reach from point A to point B 规划 controlling the vehicle 控制 2) Operational Design Domain (ODD) 运行设计域：为特定驾驶自动化系统或其功能专门设计的运行条件，包括但不限于环境、地理和时间限制，和/或某些交通或道路特征的存在或缺失。
-3) Supplements ODC (Operational Design Condition)
-设计运行时确定的驾驶自动化功能可以正常工作的条件，包括ODD、驾驶员状态以及其他必要条件。
-DDT (Dynamic Driving Task)
-在道路交通中运行车辆所需的所有实时运行和策略功能，不包括行程安排和目的地和航路点选择等战略功能。
-DDT Fallback (Dynamic Driving Task Fallback)
-在相同情况下，用户对实施DDT或达到最低风险条件的响应：
-1）在发生DDT性能相关系统故障后，或
-2）在ODD退出时，或ADS对达到最低风险条件的响应。
-OEDR (Object and Event Detection and Response)]]></description>
+  <description><![CDATA[P1_Module 1: The Requirements for Autonomy]]></description>
 </item>
 </channel>
 </rss>
