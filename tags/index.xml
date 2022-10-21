@@ -1,14 +1,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Tags - Tag - GRAND Kyle&#39;s Blog</title>
+    <title>Tags - Tag - </title>
     <link>https://KingLemonTea.github.io/tags/</link>
-    <description>Tags - Tag - GRAND Kyle&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kingkyleyuan@gmail.com (Kyle Yuan)</managingEditor>
-      <webMaster>kingkyleyuan@gmail.com (Kyle Yuan)</webMaster><lastBuildDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</lastBuildDate><atom:link href="https://KingLemonTea.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <description>Tags - Tag - </description>
+    <generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</lastBuildDate><atom:link href="https://KingLemonTea.github.io/tags/" rel="self" type="application/rss+xml" /><item>
   <title>Notes</title>
   <link>https://KingLemonTea.github.io/tags/notes/</link>
   <pubDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</pubDate>
-  <author>Kyle Yuan</author>
+  <author>Author</author>
   <guid>https://KingLemonTea.github.io/tags/notes/</guid>
   <description><![CDATA[]]></description>
 </item>
@@ -16,7 +15,7 @@
   <title>Self-Driving Cars</title>
   <link>https://KingLemonTea.github.io/tags/self-driving-cars/</link>
   <pubDate>Wed, 12 Oct 2022 18:50:26 &#43;0800</pubDate>
-  <author>Kyle Yuan</author>
+  <author>Author</author>
   <guid>https://KingLemonTea.github.io/tags/self-driving-cars/</guid>
   <description><![CDATA[]]></description>
 </item>
